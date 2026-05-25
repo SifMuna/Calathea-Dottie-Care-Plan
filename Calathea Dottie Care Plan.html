@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calathea Dottie Care Guide</title>
+    <style>
+        :root {
+            --bg-color: #1a0b2e;
+            --card-bg: #2d1b4d;
+            --accent-pink: #ff69b4;
+            --text-main: #f0f0f0;
+            --text-muted: #d1b3ff;
+            --border-glow: #ff00ff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 95%;
+            margin: 40px 0;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px;
+            background: linear-gradient(135deg, #4b0082, #ff1493);
+
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: white;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-top: 20px;
+            border: 2px solid var(--accent-pink);
+
+        }
+
+        section {
+            background-color: var(--card-bg);
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border-left: 5px solid var(--accent-pink);
+        }
+
+        h2 {
+            color: var(--accent-pink);
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        h2::before {
+
+            content: "🌿";
+            margin-right: 15px;
+        }
+
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .tip-box {
+            background: rgba(255, 105, 180, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            border: 1px dashed var(--accent-pink);
+        }
+
+        ul {
+
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent-pink);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .status-tag {
+
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background-color: var(--accent-pink);
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+
+            border-bottom: 1px solid #4b0082;
+        }
+
+        th {
+            color: var(--accent-pink);
+        }
+
+        .resource-links {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #2d1b4d;
+        }
+
+        .resource-links a {
+            color: var(--accent-pink);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+
+            transition: color 0.3s;
+        }
+
+        .resource-links a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+
+            section { padding: 20px; }
+            .hero-image { height: 250px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calathea Dottie Care Plan</h1>
+            <p>Rose-Painted Prayer Plant Care Guide</p>
+            <img src="https://images.unsplash.com/photo-1687166752260-c423a780289b?fm=jpg&q=60&w=3000&auto=format&fit=crop" alt="Calathea Plant" class="hero-image">
+        </header>
+
+        <section id="light">
+            <span class="status-tag">Lighting</span>
+            <h2>Environment & Sunlight</h2>
+            <p>Native to the Brazilian rainforest understory, the Calathea Dottie thrives in conditions that mimic a shaded forest floor.</p>
+            <ul>
+                <li><strong>Ideal Light:</strong> Medium to bright, indirect light is best.</li>
+
+                <li><strong>Avoid Direct Sun:</strong> Harsh rays can bleach or scorch the deep green and pink foliage.</li>
+                <li><strong>Low Light Tolerance:</strong> It can tolerate lower light levels, but growth will slow and colors may fade.</li>
+            </ul>
+            <div class="tip-box">
+                <strong>Pro Tip:</strong> Rotate your plant weekly to ensure even growth and prevent it from leaning toward the light source.
+            </div>
+        </section>
+
+        <section id="water">
+            <span class="status-tag">Hydration</span>
+            <h2>Watering & Soil</h2>
+            <p>Calatheas are notoriously "fussy" about their water quality and frequency.</p>
+            <ul>
+                <li><strong>Moisture Level:</strong> Keep the soil consistently moist but never soggy. Water when the top inch of soil feels dry.</li>
+                <li><strong>Water Quality:</strong> Highly sensitive to fluoride and chemicals in tap water. Use <strong>distilled, filtered, or rainwater</strong> to prevent brown edges.</li>
+                <li><strong>Soil Mix:</strong> Use a well-draining, slightly acidic potting medium. A mix of potting soil, perlite, orchid bark, and peat is ideal.</li>
+            </ul>
+            <div class="tip-box">
+                <strong>Bottom Watering:</strong> Placing the pot in a shallow dish of water for 15-20 minutes can help keep soil evenly moist without over-saturating the top layer.
+
+            </div>
+        </section>
+
+        <section id="humidity">
+            <span class="status-tag">Climate</span>
+            <h2>Temperature & Humidity</h2>
+            <p>Humidity is <strong>non-negotiable</strong> for Calathea Dottie health.</p>
+            <ul>
+                <li><strong>Humidity Level:</strong> Minimum 50-60%, ideally 70%. If air is too dry, leaf edges will turn crispy and brown.</li>
+                <li><strong>Temperature:</strong> Prefers 65°F to 85°F (18°C-30°C). Do not let temperatures drop below 60°F.</li>
+                <li><strong>Draft Warning:</strong> Keep away from AC vents, heaters, and cold window drafts.</li>
+            </ul>
+            <div class="tip-box">
+                <strong>Humidity Hacks:</strong> Group plants together, use a pebble tray, or place a humidifier within 3 feet of the plant for best results.
+            </div>
+        </section>
+
+        <section id="troubleshooting">
+            <span class="status-tag">Troubleshooting</span>
+
+            <h2>Common Problems & Fixes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symptom</th>
+                        <th>Likely Cause</th>
+                        <th>Quick Fix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Curling Leaves</td>
+                        <td>Underwatering / Low Humidity</td>
+                        <td>Water immediately and boost humidity.</td>
+                    </tr>
+                    <tr>
+                        <td>Crispy Brown Edges</td>
+                        <td>Hard Water / Dry Air</td>
+                        <td>Switch to distilled water; use a humidifier.</td>
+
+                    </tr>
+                    <tr>
+                        <td>Yellowing Leaves</td>
+                        <td>Overwatering / Poor Drainage</td>
+                        <td>Check for root rot; let soil dry out more.</td>
+                    </tr>
+                    <tr>
+                        <td>Faded Foliage</td>
+                        <td>Too Much Direct Sun</td>
+                        <td>Move to a more shaded location.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="maintenance">
+            <span class="status-tag">Ongoing Care</span>
+            <h2>Feeding & Maintenance</h2>
+            <ul>
+
+                <li><strong>Fertilizer:</strong> Feed monthly during spring and summer with a balanced liquid fertilizer diluted to half-strength.</li>
+                <li><strong>Pruning:</strong> Snip off yellow or damaged leaves at the base with sterilized shears to encourage new growth.</li>
+                <li><strong>Cleaning:</strong> Wipe leaves with a damp cloth once a month to remove dust and help the plant photosynthesize effectively.</li>
+                <li><strong>Pests:</strong> Watch for spider mites and mealybugs. Treat with neem oil or insecticidal soap if spotted.</li>
+            </ul>
+        </section>
+
+        <div class="resource-links">
+            <h3>Expert Resources</h3>
+            <a href="https://www.thesill.com/blogs/plants-101/how-to-care-for-calathea" target="_blank">The Sill Guide</a>
+            <a href="https://www.thespruce.com/grow-calathea-indoors-1902745" target="_blank">The Spruce Care</a>
+            <a href="https://succulentsbox.com/blogs/blog/how-to-care-for-calathea-dottie-1" target="_blank">Succulents Box Tips</a>
+            <a href="https://www.heyrooted.com/blogs/plant-care/calathea-care" target="_blank">Hey Rooted FAQ</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Calathea Dottie Digital Care Plan</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
